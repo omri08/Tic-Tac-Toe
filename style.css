@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #fac564;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/5908/food.png);
+}
+
+
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+hr{
+    color: white;
+    opacity: 0.3;
+   
+}
+
+h3 {
+  padding-right: 10%;
+  padding-bottom: 8%;
+  
+}
+
+
+
+.score-table {
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  padding: 1.5%;
+  width: 350px;
+}
+
+.board-game {
+  width: 500px;
+  height: 500px;
+  grid-column: 2 /3;
+  grid-row: 2 / 3;
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  
+}
+
+.square {
+  border: 6px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top {
+    border-top:none;
+}
+
+.left {
+    border-left: none;
+}
+
+.bot {
+    border-bottom: none;
+}
+
+.right {
+    border-right: none;
+}
+
+.input {
+    color: white;
+    font-size: 6em;
+    font-weight: bold;
+}
